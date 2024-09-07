@@ -60,7 +60,7 @@ GROUP BY p.Product_Category;
 ### **4. Current inventory levels for each product at each store:**
 ```sql
 SELECT s.Store_Name, p.Product_Name, i.Stock_On_Hand
-FROM inventory_inventory i
+FROM inventory i
 JOIN stores s ON i.Store_ID = s.Store_ID
 JOIN products p ON i.Product_ID = p.Product_ID;
 ```
@@ -102,7 +102,7 @@ GROUP BY st.Store_City;
 ### **9. Products out of stock in each store:**
 ```sql
 SELECT s.Store_Name, p.Product_Name
-FROM inventory_inventory i
+FROM inventory i
 JOIN stores s ON i.Store_ID = s.Store_ID
 JOIN products p ON i.Product_ID = p.Product_ID
 WHERE i.Stock_On_Hand = 0;
@@ -163,3 +163,8 @@ GROUP BY p.Product_Name, i.Stock_On_Hand;
 ```
 
 You can use these queries in your MySQL Workbench to retrieve the requested information. 
+
+### **Connect with Me:**
+
+Feel free to connect with me on LinkedIn to discuss my internship experience and explore more about data analytics insights!  
+**[My LinkedIn Profile](https://www.linkedin.com/in/prashantsingh896/)**
